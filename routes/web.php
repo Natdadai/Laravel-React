@@ -25,6 +25,49 @@ Route::get('/', function () {
     ]);
 });
 
+
+// Link Navbar
+Route::get('/home', function() {
+    return Inertia::render('Home');
+});
+
+Route::get('/post', function() {
+    return Inertia::render('Post');
+});
+
+Route::get('/3dvista', function() {
+    return Inertia::render('3dvista');
+});
+
+Route::get('/event', function() {
+    return Inertia::render('Event');
+});
+
+Route::get('/about', function() {
+    return Inertia::render('About');
+});
+
+// Link Menubar
+Route::get('/world', function() {
+    return Inertia::render('About');
+});
+
+Route::get('/mail', function() {
+    return Inertia::render('About');
+});
+
+Route::get('/facebook', function() {
+    return Inertia::render('About');
+});
+
+Route::get('/github', function() {
+    return Inertia::render('About');
+});
+
+Route::get('/shopkmu', function() {
+    return Inertia::render('Shop');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
